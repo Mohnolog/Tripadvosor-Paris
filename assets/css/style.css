@@ -154,7 +154,10 @@ header button {
 header button:hover {
   cursor: pointer;
 }
-
+header .fa-magnifying-glass,
+header .fa-bars {
+  display: none;
+}
 /* ---------------main------------------------ */
 h1 > span {
   color: #ff5d5d;
@@ -175,15 +178,15 @@ h1 + p a {
   display: flex;
   gap: 10px;
   padding-bottom: 26px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .navigation > div {
   align-content: baseline;
-  /* overflow: auto; */
+  /* overflow: hidden; */
   display: flex;
   justify-content: space-between;
-  width: calc((100% - 30px) / 4);
+  width: calc((100% - 50px) / 6);
   border: solid black 1px;
   padding: 12px 15px;
   border-radius: 14px;
@@ -191,9 +194,9 @@ h1 + p a {
 .navigation > div:hover {
   cursor: pointer;
 }
-/* .navigation > :is(:nth-child(6), :nth-child(7)) {
+.navigation > :is(:nth-child(6), :nth-child(7)) {
   display: none;
-} */
+}
 .pictures {
   display: flex;
   height: 430px;
@@ -278,8 +281,12 @@ h1 + p a {
   color: grey;
 }
 .description {
-  /* display: flex; */
+  display: flex;
   margin-bottom: 80px;
+}
+
+.description .col1 {
+  width: 50%;
 }
 
 .description .col-1 p {
@@ -290,28 +297,31 @@ h1 + p a {
   color: #333333;
 }
 .description .col-2 {
-  height: 281px;
+  width: calc(50% -120px);
+  margin-left: 120px;
+  /* height: 281px;
   margin-top: 64px;
-  display: flex;
+  display: flex; */
 }
 .description .col-2 div:first-child {
   padding: 32px;
-  border-radius: 16px 0 0 16px;
+  border-radius: 16px 16px 0 0;
   background-color: #ff5d5d;
-  flex: 1;
+  /* flex: 1; */
 }
 .description .col-2 p {
   font-family: "TS-Reg";
   margin-bottom: 24px;
 }
 .description .col-2 div:last-child {
-  flex: 1;
-  height: 100%;
+  height: 190px;
+  /* flex: 1; */
+  /* height: 100%; */
   background-image: url(../img/image_trips_card_medium.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0 16px 16px 0;
+  border-radius: 0 0 16px 16px;
 }
 .description button {
   height: 54px;
@@ -335,16 +345,15 @@ section {
   padding-right: 30px;
 }
 .section-1 .col-2 {
-  flex: 4;
+  flex: 3;
   display: flex;
   gap: 15px;
   overflow-x: scroll;
-  /* -ms-overflow-style: none; */
-  /* scrollbar-width: 10px; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 .section-1 .col-2::-webkit-scrollbar {
-  width: 5px;
-  height: 8px;
+  display: none;
 }
 .section-1 .col-2::-webkit-scrollbar-thumb {
   background: #aaa;
