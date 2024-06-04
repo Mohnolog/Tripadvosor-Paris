@@ -1,4 +1,9 @@
 /* ---------------Global------------------------ */
+/* @import "./reset.css";
+@import "./responsive.css";
+@import "./icons.css";
+@import "./stylesheet.css"; */
+
 * {
   box-sizing: border-box;
 }
@@ -182,6 +187,7 @@ h1 + p a {
 }
 
 .navigation > div {
+  /* flex: 1; */
   align-content: baseline;
   /* overflow: hidden; */
   display: flex;

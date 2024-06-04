@@ -99,6 +99,7 @@
   .navigation > div {
     width: fit-content;
     flex-shrink: 0;
+    /* flex: auto; */
   }
   .navigation > div:first-child {
     margin-left: 20px;
@@ -134,7 +135,7 @@
     padding-right: 0;
     margin-bottom: 40px;
   }
-  section-1 .col-2 .carrousel-col,
+  .section-1 .col-2 .carrousel-col,
   .section-2 .col {
     width: calc((100% - 30px) / 1.5);
   }
