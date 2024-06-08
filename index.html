@@ -49,7 +49,7 @@
               <span>Alertes</span>
             </a>
           </div>
-          <button>Connectez-vous</button>
+          <button class="btn-signup">Connectez-vous</button>
           <i class="fa-solid fa-magnifying-glass"></i>
           <div>
             <a
@@ -544,5 +544,40 @@
         <a href="https://www.lereacteur.io/">Le Reacteur</a>
       </p>
     </footer>
+    <div class="modal hidden">
+      <div class="form-container">
+        <div>
+          <i class="fa-light fa-xmark"></i>
+          <p>Formulaire de contact</p>
+          <form id="contact-form">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Prénom"
+              autocomplete="off"
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Nom"
+            />
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Ecrivez votre message..."
+            ></textarea>
+            <input
+              type="submit"
+              value="Envoyer le formulaire"
+              id="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
