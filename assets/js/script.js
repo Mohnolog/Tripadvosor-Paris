@@ -62,6 +62,7 @@ $.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await axios.post(
         "https://site--trip-back-end--ktq7rdyfd79c.code.run/form",
+
         data
       );
 
