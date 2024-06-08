@@ -1,4 +1,5 @@
 const $ = document;
+console.log(document);
 
 $.addEventListener("DOMContentLoaded", () => {
   const modal = $.querySelector(".modal");
@@ -59,7 +60,10 @@ $.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://site--trip-back-end--ktq7rdyfd79c.code.run/form",
+        data
+      );
 
       if (response.status === 200) {
         alert("Votre formulaire a bien été envoyé");
